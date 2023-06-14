@@ -10,29 +10,25 @@
   gap: 50px;
   position: relative;
 }
-
 .footer-texto {
   font-size: 1.5rem;
   line-height: 1.33;
   color: #b59bff;
   display: grid;
   font-weight: 700;
+  position: relative;
 }
 .footer-texto::after {
   content: "";
   display: block;
-  width: 10px;
+  width: 20px;
   height: 35px;
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  left: 340px;
-  top: 190px;
+  left: 380px;
+  margin-top: 85px;
   background-image: url("/img/ola.svg");
   background-repeat: no-repeat;
-  padding: 0px 0px 0px 30px;
 }
-
 .footer-contato {
   color: #f2edff;
   font-weight: 700;
@@ -40,7 +36,7 @@
   line-height: 1.33;
   padding: 0px 0px 0px 300px;
 }
-.footer-contato a {
+.footer-contato a{
   text-decoration: none;
   color: #f2edff;
 }
@@ -56,39 +52,71 @@
   width: 80px;
   display: flex;
   flex-direction: row;
-  left: 800px;
+  left: 850px;
   top: 190px;
   gap: 8px;
   align-items: center;
 }
-
-@media only screen and (max-width: 1000px){
+@media (max-width:900px){
   .footer-container {
     grid-template-columns: 1fr;
     padding: 60px 20px;
     gap: 40px;
   }
-  .footer-contato {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .footer-texto {
-    grid-template-columns: 1fr;
-    padding: 10px 20px;
+  .footer-texto{
+  font-size: 1.2rem;
+  line-height: 1; 
+  padding: 10px 20px;
+  position: absolute;
   }
   .footer-texto::after {
-    left: 180px;
-    top: 140px;
+    left: 120px;
+    top: -108px;
+    position: relative;
   }
   .footer-contato {
-    padding: 10px 20px;
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 10px 10px;
   }
   .redes {
-    left: 50px;
+    left: 10px;
+    top:100px;
+    padding: 20px 20px;
+  }
+}
+@media (max-width:600px){
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  .footer-texto {
+    padding: 10px 20px;
+    font-size: 1rem;
+    line-height: 1.2;
+    position: relative;
+  }
+  .footer-texto::after {
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    padding: 10px 10px;
+    left: 280px;
+   top: -30px;
+  }
+  .footer-contato {
+    font-size:0.8rem;
+    line-height: 1.33;
+  }
+  .redes {
+    left: 30px;
+    top: 180px;
     padding: 20px 0px;
-    top: 280px;
   }
   .footer-copy {
     padding: 50px 0px 0px 20px;
+    font-size: 0.7rem;
+    line-height: 1.5; 
   }
 }

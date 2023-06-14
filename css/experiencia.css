@@ -58,9 +58,13 @@ color: #53269C;
    }
    .empresa-texto{
     font-size: .875rem;
-    line-height:1.4 ;
+    line-height:1.4;
     color:#53269C;
   }
+.empresa-texto a{
+  text-decoration: none;
+  color:inherit;
+}
   .empresa-hablidade{
    display: flex; 
    flex-wrap: wrap;
