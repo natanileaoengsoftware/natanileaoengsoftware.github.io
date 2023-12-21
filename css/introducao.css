@@ -7,20 +7,23 @@
   gap: 100px;
   align-items: center;
 }
-.sol {
-  padding: 0px 10px 10px 0px;
-  margin-left: 10px;
-  width: 30px;
-}
 .container {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container-slogan{
+  color:#583619;
+}
+.container-local{
+color: #856953;
 }
 .introducao-h1{
-  font-size: 4.5rem;
+  font-size: 3.6rem;
   line-height: 1.125;
   margin-bottom: 30px;
   position: relative;
-  color:#441b88;
+  color:#53269C;
 } 
 
 .introducao h1::before{
@@ -36,60 +39,53 @@
   }
   .introducao p{
     font-size: 1.5rem;
-    color: #525252;
+    color: #6D5038;
    }
-   @media(max-width:1000px){
+   @media(max-width:860px){
     .introducao h1{
       font-size: 3rem;
     }
-   }
-   @media(max-width: 800px){
     .introducao{
       grid-template-columns: 1fr 1fr;
       gap:40px;
     }
-    .introducao h1::before{
-      width: 10px; 
-      height: 10px;
-      left: 0px;
+    .container-slogan{
+      width: 350px;
+       font-size: 2rem;
+       line-height: 1.2;  
+       margin: 15px 0px 0px -20px;
      }
-    .introducao h1{
-      font-size: 2rem;
-      margin: 0px; 
-    }
-    .introducao p{
-      gap:20px;
-      font-size: 0.8rem;
-      line-height: 1.2; 
-    }  
-    .sol {
-      width: 20px;
-    }
+     .container-local{
+       font-size: 1.2rem;
+       line-height: 1.2;  
+       margin: -10px 0px 0px -20px; 
+     }
    }
-   @media(max-width:400px){
+   @media(max-width:460px){
     .introducao{
-    grid-template-columns: 1fr;
-    padding: 20px 20px;
+      max-width: 600px;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     }
     .introducao img{
       padding: 10px 10px;
-      max-width: 100px;
+      max-width: 150px;
     }
     .introducao h1{
       font-size: 1.4rem;
       line-height: 1; 
+      margin: 15px 0px 0px -10px;
     }
-    .introducao p{
+    .container-slogan{
+     width: 200px;
+      font-size: 2rem;
+      line-height: 1.2;  
+      margin: 15px 0px 0px -20px;
+    }
+    .container-local{
+      width: 200px;
       font-size: 0.8rem;
       line-height: 1.2;  
-      position: absolute;  
+      margin: -10px 0px 0px -20px; 
     }
-   
-    .sol {
-      left: 220px;
-      top: -9px;
-      position: relative;
-      width: 20px;
-   }
   }

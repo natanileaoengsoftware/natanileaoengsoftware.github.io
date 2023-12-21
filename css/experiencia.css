@@ -7,16 +7,17 @@
   gap:100px
 }
 .experiencia .subtitulo{
-  background:-webkit-linear-gradient(top,#F2EDFF,#D9CCFF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color:transparent;
+color:#6342C5;
+font-family: 'Reagile', 'Times New Roman', Times, serif;
+  margin: 200px 0px 0px 0px;
+  font-size:5.5rem;
 }
 .experiencia-texto{
   font-size: 1.5 rem;
-  line-height: 1.33;
-  max-width: 40ch;
+  line-height: 1.4;
   margin-bottom: 60px;
-  color: #53269c;
+  color: #3E220B;
+  text-align: justify;
 }
 .experiencia-texto strong{
 color: #53269C;
@@ -26,7 +27,7 @@ color: #53269C;
   grid-template-columns: 1fr 1fr;
   gap:10px 20px;
   padding: 20px;
-  background:#F2EDFF ;
+  background:#F2EDFF ; 
   margin-bottom: 20px;
   border-radius: 4px;
  position: relative;
@@ -55,15 +56,15 @@ color: #53269C;
     font-size: 1.125rem; 
     line-height: 1.1;
     font-weight: bold;
+    color:#6D5038;
    }
    .empresa-texto{
     font-size: .875rem;
     line-height:1.4;
-    color:#53269C;
+    color:#330D72;
   }
 .empresa-texto a{
-  text-decoration: none;
-  color:inherit;
+  color:#583619;
 }
   .empresa-hablidade{
    display: flex; 
@@ -78,29 +79,40 @@ color: #53269C;
     background: #B59BFF;
     padding: 5px 10px;
    }
-  @media(max-width:800px){
+  @media(max-width:860px){
     .experiencia{
       grid-template-columns: 1fr;
       gap:40px;
     }
     .experiencia .subtitulo{
-      background:-webkit-linear-gradient(top,#F2EDFF,#D9CCFF);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color:transparent;
-      font-size: 2rem;
+      font-size: 3rem;
+      margin: 5px 0px 0px 220px;
+      white-space: nowrap;
     }
     .experiencia-texto{
-      font-size: 1.25rem;
+      font-size: 1.3rem;
+      line-height: 1.6;
     }
     .empresa-ano{
-      poistion:initial;
       order:1;
       width: initial;
       text-align: left;
     }
   }
-  @media (max-width:400px){
+  @media (max-width:460px){
+    .experiencia{
+   margin: -200px 0px 0px 0px;
+    }
     .empresa{
       grid-template-columns: 1fr;
+      margin: 20px 0px 0px 0px;
     }
+    .experiencia .subtitulo{
+        margin: 200px 0px 0px 100px;
     }
+    .experiencia-texto{
+      font-size: 1rem;
+      line-height: 1.4;
+      margin:-10px 10px 10px 10px;
+    }
+  }

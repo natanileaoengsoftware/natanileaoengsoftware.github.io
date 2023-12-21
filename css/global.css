@@ -26,8 +26,3 @@ img {
   word-break: break-all;
   max-width: 4ch;
 }
-@media only screen and (max-width: 800px){
-.formacao-extra {
-  padding: 10px 30px;
-}
-}
