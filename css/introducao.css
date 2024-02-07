@@ -1,29 +1,41 @@
 .introducao {
   max-width: 1200px;
-  padding: 20px 20px 20px 20px;
+  padding: 100px 20px 20px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   align-items: center;
+  
 }
 .container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.container-slogan{
-  color:#583619;
-}
 .container-local{
-color: #856953;
+color: #3D3D3D;
+margin-top: -20px;
 }
+.introducao img{
+  animation: anima-foto 1s ease-in;
+}
+@keyframes anima-foto {
+  0% {
+    top: 0;
+    left: 0;
+    transform: translatey(18px);
+  }
+}
+
 .introducao-h1{
   font-size: 3.6rem;
   line-height: 1.125;
   margin-bottom: 30px;
+  margin-left: 10px;
   position: relative;
   color:#53269C;
+  font-family: 'coolvetica rg';
 } 
 
 .introducao h1::before{
@@ -39,11 +51,11 @@ color: #856953;
   }
   .introducao p{
     font-size: 1.5rem;
-    color: #6D5038;
+    color: #131212;
    }
-   @media(max-width:860px){
+   @media(max-width:800px){
     .introducao h1{
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
     .introducao{
       grid-template-columns: 1fr 1fr;
@@ -58,34 +70,34 @@ color: #856953;
      .container-local{
        font-size: 1.2rem;
        line-height: 1.2;  
-       margin: -10px 0px 0px -20px; 
+       margin: -10px 0px 0px -5px; 
      }
    }
    @media(max-width:460px){
     .introducao{
-      max-width: 600px;
-    grid-template-columns: 1fr 1fr;
+    width: 650px;
+    grid-template-columns: 1fr;
     gap: 10px;
     }
     .introducao img{
-      padding: 10px 10px;
-      max-width: 150px;
+      margin: -40px 0px 0px 100px;
+      max-width:180px;
     }
     .introducao h1{
-      font-size: 1.4rem;
-      line-height: 1; 
-      margin: 15px 0px 0px -10px;
-    }
-    .container-slogan{
-     width: 200px;
       font-size: 2rem;
+      line-height: 1; 
+      margin: 20px 0px 0px 100px;
+    }
+    .slogan{
+     width: 300px;
+      font-size: 1rem;
       line-height: 1.2;  
-      margin: 15px 0px 0px -20px;
+      margin: 15px 80px 0px 50px;
     }
     .container-local{
       width: 200px;
       font-size: 0.8rem;
       line-height: 1.2;  
-      margin: -10px 0px 0px -20px; 
+      margin: -10px 0px 0px 50px; 
     }
   }
